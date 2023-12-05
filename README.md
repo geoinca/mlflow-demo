@@ -74,10 +74,14 @@ Since you added the `pip` installs directly to the file, you didn't really insta
 The command will look into any new (or different) dependencies and install them. The `--prune` flag will remove anything that is no longer defined in the _conda_env.yml_ file. In this case, you didn't remove anything, but it is still a good idea to keep using it.
 
 
-Run 
+Run  with a parameter
 
 ```
  mlflow run . -P filename=carriage.csv
 ```
 
+Run mora parameter
 
+```
+mlflow run . -P filename=carriage.csv -P max_errors=13
+```
